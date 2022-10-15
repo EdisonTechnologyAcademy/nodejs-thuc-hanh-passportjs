@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+<h1>Sign in</h1>
+
+<form action="/auth/login" method="post">
+    <section>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+    </section>
+    <section>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="text" autocomplete="password" required>
+    </section>
+    <button type="submit">Sign in</button>
+</form>
+<a class="button google" href="/auth/google">Sign in with Google</a>
+</body>
+</html>
